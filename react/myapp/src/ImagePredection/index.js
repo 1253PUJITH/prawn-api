@@ -39,7 +39,7 @@ const ImagePredection = () => {
     try {
       setIsLoading(true); // 👈 Show loading before API call
 
-      const response = await axios.post("http://127.0.0.1:5000/predict", formData, {
+      const response = await axios.post("https://prawn-api.onrender.com/predict", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
